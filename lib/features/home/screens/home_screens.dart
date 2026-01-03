@@ -152,7 +152,9 @@ class _HomePageState extends State<HomePage> {
               centerTitle: false,
               automaticallyImplyLeading: false,
               backgroundColor: Theme.of(context).highlightColor,
-              title: Image.asset(Images.logoWithNameImage, height: 35),
+              title: Text('App Name', style: textBold.copyWith(
+                color: Theme.of(context).cardColor, fontSize: Dimensions.fontSizeLarge,
+              ),),
             ),
 
             SliverToBoxAdapter(child: Provider.of<SplashController>(context, listen: false).configModel!.announcement!.status == '1'?
@@ -168,7 +170,6 @@ class _HomePageState extends State<HomePage> {
                 child: const Hero(tag: 'search', child: Material(child: SearchHomePageWidget())),
               ),
             )),
-
 
             SliverToBoxAdapter(
               child: BannersWidget(),
@@ -208,6 +209,7 @@ class _HomePageState extends State<HomePage> {
                           textAlign: TextAlign.center,
                         ),
                       ),
+                      
                       const SizedBox(height: Dimensions.paddingSizeSmall),
 
                       const FlashDealsListWidget()
@@ -218,8 +220,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-
-
             SliverToBoxAdapter(
               child: Consumer<FeaturedDealController>(
                   builder: (context, featuredDealProvider, child) {

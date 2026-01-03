@@ -8,15 +8,10 @@ import 'package:flutter_sixvalley_ecommerce/common/enums/local_caches_type_enum.
   static const String appVersion = '15.7'; ///Flutter SDK 3.38.1
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
 
-  // TODO: Replace with your actual backend API URL
-
   static const String baseUrl = 'https://shop.mastropaytech.com/';
-
-  // TODO: Replace with your actual Google Server Client ID from Firebase Console
 
   static const String googleServerClientId = '129565798116-3lsfl6upidtqi5lol408iel4srfnms1k.apps.googleusercontent.com';
   static const String userId = 'userId';
-
   static const String name = 'name';
   static const String categoriesUri = '/api/v1/categories';
   static const String brandUri = '/api/v1/brands?guest_id=1';
@@ -133,7 +128,6 @@ import 'package:flutter_sixvalley_ecommerce/common/enums/local_caches_type_enum.
   static const String mergeGuestCart = '/api/v1/cart/get-merge-guest-cart';
   static const String orderDetailsTrack = '/api/v1/order/track-order-details?order_id=';
 
-
   //address
   static const String updateAddressUri = '/api/v1/customer/address/update';
   static const String geocodeUri = '/api/v1/mapapi/geocode-api';
@@ -175,11 +169,6 @@ import 'package:flutter_sixvalley_ecommerce/common/enums/local_caches_type_enum.
   static const String replaceFromCompareList = '/api/v1/customer/compare/product-replace';
   static const String setCurrentLanguage = '/api/v1/customer/language-change';
   static const String registerWithSocialMedia = '/api/v1/auth/registration-with-social-media';
-
-
-
-
-
 
   // sharePreference
   static const String userLoginToken = 'user_login_token';
