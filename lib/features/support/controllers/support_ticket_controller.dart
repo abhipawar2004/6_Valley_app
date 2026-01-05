@@ -30,7 +30,6 @@ class SupportTicketController extends ChangeNotifier {
   bool get isLoading => _isLoading;
 
 
-
   Future<http.StreamedResponse> createSupportTicket(SupportTicketBody supportTicketBody) async {
     _isLoading = true;
     notifyListeners();
@@ -44,7 +43,6 @@ class SupportTicketController extends ChangeNotifier {
       _isLoading = false;
     } else {
       _isLoading = false;
-
     }
     _pickedImageFiles = [];
     pickedImageFileStored = [];
