@@ -29,7 +29,6 @@ class SupportTicketController extends ChangeNotifier {
   List<SupportReplyModel>? get supportReplyList => _supportReplyList != null ? _supportReplyList!.reversed.toList() : _supportReplyList;
   bool get isLoading => _isLoading;
 
-
   Future<http.StreamedResponse> createSupportTicket(SupportTicketBody supportTicketBody) async {
     _isLoading = true;
     notifyListeners();

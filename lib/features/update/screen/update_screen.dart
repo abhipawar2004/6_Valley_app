@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_button_widget.dart';
 import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
@@ -58,7 +57,6 @@ class UpdateScreen extends StatelessWidget {
                 showCustomSnackBarWidget('${getTranslated('can_not_launch', Get.context!)!}  $appUrl', Get.context!, snackBarType: SnackBarType.error);
               }
             }),
-
           ]),
         ),
       ),
